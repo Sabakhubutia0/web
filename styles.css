@@ -205,7 +205,7 @@ button {
 }
 
 .serd-list-icon-border {
-  border: 2px soli black;
+  border: 2px solid black;
   background-color: #15263e;
   margin: 5px;
 }
@@ -214,4 +214,88 @@ button {
   background-color: #a2b3cc;
 }
 
-/* ------------------------------------------ */
+/* ------------------four-section------------------------ */
+
+.four-section-bground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131a36;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  height: 210px;
+}
+
+.four-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.four-section-first-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.four-section-first-border:hover {
+  background-color: #e93656;
+}
+
+.four-section-first-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four-section-first-img-widht {
+  width: 30px;
+  height: 30px;
+}
+/* --------------phone-text-------------- */
+
+.phone-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 29px;
+  margin-right: 41px;
+  color: white;
+}
+.phone-text h3 {
+  font-size: larger;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.phone-text p {
+  font-size: medium;
+  color: #dfdfdf;
+  margin-top: 5px;
+}
+
+/* -------------------four-section-location-img------------- */
+
+.four-section-second-img-widht {
+  width: 31px;
+  height: 31px;
+}
+/* 
+----------four-section-gmail-img------------ */
+
+.phone-text p a {
+  font-size: medium;
+  color: #dfdfdf;
+  margin-top: 5px;
+}
+
+.gmail {
+  margin-right: 0;
+}
+
+/* ----------------------------------------------------- */
