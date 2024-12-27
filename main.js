@@ -13,3 +13,33 @@
 // setInterval(changeBackground, 2000);
 
 // console.log("hello");
+
+function animateProgressBars() {
+  const progressBars = document.querySelectorAll(".progress-bar-fill");
+  progressBars.forEach((bar) => {
+    const percent = bar.getAttribute("data-percent");
+    bar.style.width = percent + "%";
+  });
+}
+
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function checkProgressBars() {
+  const containers = document.querySelectorAll(".progress-container");
+  containers.forEach((container) => {
+    if (isElementInViewport(container)) {
+      animateProgressBars();
+    }
+  });
+}
+
+window.addEventListener("scroll", checkProgressBars);

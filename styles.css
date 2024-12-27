@@ -121,6 +121,10 @@ a {
   grid-auto-rows: auto;
 }
 
+.wrapper-first {
+  margin-top: 218px;
+}
+
 .wrapper-first,
 span,
 h4 {
@@ -153,6 +157,7 @@ button {
   width: 430px;
   height: 603px;
   object-fit: cover;
+  margin-top: 135px;
 }
 
 .second-section a {
@@ -163,3 +168,50 @@ button {
 
 /* 
 -------------------------------- */
+.serd-list {
+  margin-top: 194px;
+}
+.serd-list span {
+  color: #e93656;
+}
+
+.progress-container {
+  width: 300px;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #ff4d4d;
+  transition: width 1.5s ease-in-out;
+}
+
+.progress-label {
+  margin-bottom: 5px;
+}
+/* -------------------------------------- */
+.serd-list-icon {
+  display: flex;
+  margin-top: 194px;
+}
+
+.serd-list-icon-border {
+  border: 2px soli black;
+  background-color: #15263e;
+  margin: 5px;
+}
+
+.serd-list-icon-border :hover {
+  background-color: #a2b3cc;
+}
+
+/* ------------------------------------------ */
