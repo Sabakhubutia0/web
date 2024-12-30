@@ -298,4 +298,72 @@ button {
   margin-right: 0;
 }
 
-/* ----------------------------------------------------- */
+/* -----------------five-section------------------------------------ */
+
+/* .five-section {
+  margin-top: 203px;
+  margin-bottom: 160px;
+}
+
+.five-section-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-right: 100px;
+  margin-left: 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.grid-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 285px;
+  height: 360px;
+  background-color: #fafafa;
+  border: 1px solid black;
+}
+
+.section-5-img img {
+  width: 61px;
+  height: 61px;
+} */
+
+.five-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 0 100px;
+}
+
+.five-section-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.grid-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 285px;
+  height: 360px;
+  background-color: #fafafa;
+  border: 1px solid black;
+}
+
+.section-5-img img {
+  width: 61px;
+  height: 61px;
+  margin-bottom: 15px;
+}
+
+.five-section-iqon-text {
+  color: #222222;
+  text-align: center;
+  margin: 0;
+}

@@ -43,3 +43,19 @@ function checkProgressBars() {
 }
 
 window.addEventListener("scroll", checkProgressBars);
+
+// -------------------------------
+
+// const box = document.getElementById("box1");
+
+// // მაუსის მიტანისას
+// box.addEventListener("mouseover", () => {
+//   box.querySelector(".section-5-img").style.display = "none"; // სურათის დამალვა
+//   box.querySelector(".icon-text").style.display = "block"; // ტექსტის გამოჩენა
+// });
+
+// // მაუსის მოცილებისას
+// box.addEventListener("mouseout", () => {
+//   box.querySelector(".section-5-img").style.display = "block"; // სურათის დაბრუნება
+//   box.querySelector(".icon-text").style.display = "none"; // ტექსტის დამალვა
+// });
