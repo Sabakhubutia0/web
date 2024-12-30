@@ -44,18 +44,41 @@ function checkProgressBars() {
 
 window.addEventListener("scroll", checkProgressBars);
 
-// -------------------------------
+// ------------five-section-------------------
+document.addEventListener("DOMContentLoaded", function () {
+  const boxes = document.querySelectorAll(".five-section-grid .grid-1");
 
-// const box = document.getElementById("box1");
+  boxes.forEach((box) => {
+    const icon = box.querySelector(".icon");
+    const text = box.querySelector(".five-section-iqon-text");
+    const title = box.querySelector(".title");
+    const description = box.querySelector(".description");
 
-// // მაუსის მიტანისას
-// box.addEventListener("mouseover", () => {
-//   box.querySelector(".section-5-img").style.display = "none"; // სურათის დამალვა
-//   box.querySelector(".icon-text").style.display = "block"; // ტექსტის გამოჩენა
-// });
+    const status = localStorage.getItem("boxStatus");
 
-// // მაუსის მოცილებისას
-// box.addEventListener("mouseout", () => {
-//   box.querySelector(".section-5-img").style.display = "block"; // სურათის დაბრუნება
-//   box.querySelector(".icon-text").style.display = "none"; // ტექსტის დამალვა
-// });
+    if (status !== "hovered") {
+      icon.style.display = "block";
+      text.style.display = "block";
+      title.style.display = "none";
+      description.style.display = "none";
+    }
+
+    box.addEventListener("mouseover", function () {
+      localStorage.setItem("boxStatus", "hovered");
+
+      icon.style.display = "none";
+      text.style.display = "none";
+      title.style.display = "block";
+      description.style.display = "block";
+    });
+
+    box.addEventListener("mouseout", function () {
+      localStorage.removeItem("boxStatus");
+
+      icon.style.display = "block";
+      text.style.display = "block";
+      title.style.display = "none";
+      description.style.display = "none";
+    });
+  });
+});

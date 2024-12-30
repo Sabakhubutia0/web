@@ -300,42 +300,66 @@ button {
 
 /* -----------------five-section------------------------------------ */
 
-/* .five-section {
-  margin-top: 203px;
-  margin-bottom: 160px;
-}
-
-.five-section-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-right: 100px;
-  margin-left: 100px;
-  column-gap: 10px;
-  row-gap: 10px;
-}
-
-.grid-1 {
+.five-section-iqon-text,
+.title,
+.description {
+  display: none;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 285px;
-  height: 360px;
-  background-color: #fafafa;
-  border: 1px solid black;
+  width: 100%;
+  text-align: center;
 }
 
-.section-5-img img {
-  width: 61px;
-  height: 61px;
-} */
+.icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.grid-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-1 .title {
+  margin-top: 20px;
+}
+
+.grid-1:hover .icon {
+  display: none;
+}
+
+.grid-1:hover .five-section-iqon-text,
+.grid-1:hover .title,
+.grid-1:hover .description {
+  display: block;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 1rem;
+}
 
 .five-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 203px;
+  margin-bottom: 291px;
   padding: 0 100px;
 }
 
@@ -346,14 +370,25 @@ button {
 }
 
 .grid-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 285px;
   height: 360px;
   background-color: #fafafa;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  transition: background-color 0.4s ease;
+}
+.grid-1,
+h3,
+p {
+  color: white;
+}
+
+.grid-1:hover {
+  background-color: #15263e;
 }
 
 .section-5-img img {
@@ -364,6 +399,7 @@ button {
 
 .five-section-iqon-text {
   color: #222222;
-  text-align: center;
   margin: 0;
+  text-align: center;
+  width: 100%;
 }
