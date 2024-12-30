@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* სურათი ბეგრაუნდად */
+  z-index: -1;
 }
 
 .text {
@@ -22,10 +24,21 @@
   position: relative;
   z-index: 1;
 }
+.text h1 {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.text p {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #373737;
+}
 
 h1 {
   font-size: xx-large;
-  color: #1a1a1a;
   margin-top: 10px;
   margin-left: 52px;
 }
@@ -35,9 +48,14 @@ h2 {
   margin-left: 52px;
 }
 
+.text h2 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 p {
-  font-size: xx-large;
-  color: #373737;
+  color: #1a1a1a;
   margin-top: 20px;
   margin-right: 81px;
 }
@@ -95,6 +113,14 @@ a {
 .last-text span {
   color: #e93656;
 }
+
+.last-text h3 {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #212121;
+}
+
 /* 
 ------------------------- */
 
@@ -112,6 +138,12 @@ a {
 }
 
 /* ---------------------- second-section---------------- */
+
+.wrapper-first p {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
 .second-section {
   margin-top: 135px;
 }
@@ -123,6 +155,16 @@ a {
 
 .wrapper-first {
   margin-top: 218px;
+}
+.wrapper-first h1 {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.wrapper-first h4 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .wrapper-first,
@@ -136,7 +178,8 @@ h4 {
 }
 
 .wrapper-first p {
-  margin: 0;
+  margin-left: 100px;
+  margin-right: -4px;
   text-align: end;
   color: #555555;
   margin-top: 33px;
@@ -148,6 +191,12 @@ button {
   background-color: #e93656;
   color: #ffffff;
   margin-top: 60px;
+}
+
+button {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* -------------------------- */
@@ -170,6 +219,12 @@ button {
 -------------------------------- */
 .serd-list {
   margin-top: 194px;
+}
+
+.serd-list {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 .serd-list span {
   color: #e93656;
@@ -225,6 +280,12 @@ button {
   height: 100%;
   margin-top: 100px;
   height: 210px;
+}
+
+.four-section-bground {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .four-section {
@@ -299,7 +360,6 @@ button {
 }
 
 /* -----------------five-section------------------------------------ */
-
 .five-section-iqon-text,
 .title,
 .description {
@@ -352,6 +412,17 @@ button {
   margin-top: 10px;
   font-size: 1rem;
 }
+.title {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.five-section-iqon-text {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
 
 .five-section {
   display: flex;
@@ -403,3 +474,5 @@ p {
   text-align: center;
   width: 100%;
 }
+
+/* ----------------section6------------------ */
