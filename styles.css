@@ -477,8 +477,95 @@ p {
 
 /* ----------------section6------------------ */
 
-.section-6 h2 {
+.section-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: #a2b3cc;
+  padding: 130px;
+  margin-bottom: 500px;
+}
+
+.section-6-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-6-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin-right: 50px;
+  padding: 10px;
+}
+
+.section-6-img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.section-6-start h3 {
+  margin-right: 50px;
+}
+
+.section-6-text-first {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  margin-left: -100px;
+  width: 400px;
+}
+
+.section-6-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-6-text span {
   font-family: "Poppins", serif;
   font-weight: 900;
   font-style: normal;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-6-text h3 {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 50px;
+  color: #e93656;
+}
+
+.section-6-text h2 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+  margin-top: 9px;
+}
+
+.section-6-buttom {
+  margin-left: 15px;
+}
+
+.section-6-buttom button {
+  display: flex;
+  flex-direction: column;
+  margin: 14px;
+  width: 13px;
+  height: 13px;
 }
