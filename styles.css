@@ -485,7 +485,7 @@ p {
   height: 200px;
   background-color: #a2b3cc;
   padding: 130px;
-  margin-bottom: 500px;
+  margin-bottom: 144px;
 }
 
 .section-6-start {
@@ -568,4 +568,76 @@ p {
   margin: 14px;
   width: 13px;
   height: 13px;
+}
+/* -------------------section-7------------- */
+
+.section-7 {
+  margin-bottom: 100px;
+}
+
+.grid-flex {
+  display: flex;
+  margin-top: 55px;
+}
+
+.section-7 h1 {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(40px, auto));
+  background-color: #15263e;
+  width: 240px;
+  height: 401px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+.menu-item {
+  margin: 5px 30px 5px 30px;
+  padding: 10px 0;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  color: #e63946;
+}
+
+.menu-item.active::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background-color: #e63946;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* ------------------------------------- */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 350px);
+  gap: 10px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #e9ecef;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
 }
