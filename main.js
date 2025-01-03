@@ -82,3 +82,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// -----------------section07--------------------------------------
+
+document.querySelectorAll(".menu-item").forEach((item) => {
+  item.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const category = item.getAttribute("data-category");
+
+    document.querySelectorAll(".grid-item").forEach((gridItem) => {
+      if (
+        category === "all" ||
+        gridItem.getAttribute("data-category") === category
+      ) {
+        gridItem.style.display = "block";
+      } else {
+        gridItem.style.display = "none";
+      }
+    });
+
+    document.querySelectorAll(".menu-item").forEach((link) => {
+      link.classList.remove("active");
+    });
+    item.classList.add("active");
+  });
+});
