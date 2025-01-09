@@ -490,15 +490,29 @@
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
       </div>
       <div class="form-class">
-        <form action="">
+        <form id="contactForm">
           <div class="form-group">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" name="emails" placeholder="Email Address" required />
-            <input type="text" placeholder="Your Website" />
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+            <input type="text" id="website" placeholder="Your Website" />
           </div>
-          <textarea name="text" placeholder="Message" required></textarea>
-          <button class="button-footer">SEND MESSAGE</button>
+          <textarea id="message" placeholder="Message" required></textarea>
+          <button type="submit" class="button-footer">SEND MESSAGE</button>
         </form>
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <p>
+            Thank you for getting in touch! We appreciate you contacting 
+          </p>
+          <button id="closeModal" class="close-modal">Close</button>
+        </div>
       </div>
     </footer>
 

@@ -108,3 +108,51 @@ document.querySelectorAll(".menu-item").forEach((item) => {
     item.classList.add("active");
   });
 });
+
+// --------------footer----------------------
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const website = document.getElementById("website").value;
+    const message = document.getElementById("message").value;
+
+    try {
+      const response = await fetch(
+        "https://borjomi.loremipsum.ge/api/send-message",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            website,
+            message,
+          }),
+        }
+      );
+
+      const result = await response.json();
+      if (result.status === 1) {
+        const modal = document.getElementById("modal");
+        modal.style.display = "flex";
+
+        document
+          .getElementById("closeModal")
+          .addEventListener("click", function () {
+            modal.style.display = "none";
+          });
+      } else {
+        alert("Error: Unable to send your message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred. Please try again later.");
+    }
+  });
