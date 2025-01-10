@@ -438,7 +438,8 @@ button {
 
 .description {
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: medium;
+  margin-left: 80px;
 }
 .title {
   font-family: "Poppins", serif;
