@@ -1276,6 +1276,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .footer2-text-icon h1 {
