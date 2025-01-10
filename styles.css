@@ -16,11 +16,15 @@
   z-index: -1;
 }
 
+.Roca-span-color span {
+  color: #0081ff;
+}
+
 .text {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-top: 20px;
+  margin-top: -46px;
   position: relative;
   z-index: 1;
 }
@@ -58,6 +62,30 @@ p {
   color: #1a1a1a;
   margin-top: 20px;
   margin-right: 81px;
+}
+
+/* ----------------------------------- */
+.text-01 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-right: 25px;
+}
+
+.text-01 h1 {
+  font-weight: 800;
+  font-size: 100px;
+  color: #1c1c1c;
+  margin: 0;
+}
+
+.text-01 p {
+  font-weight: 900;
+  font-size: 30px;
+  color: #373737;
+  margin: -100px 0 0;
 }
 
 /* ------------------------------------ */
