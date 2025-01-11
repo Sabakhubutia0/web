@@ -1397,8 +1397,8 @@ input::placeholder {
   }
 
   .section-img img {
-    width: 430px;
-    height: 300px;
+    max-width: 430px;
+    width: 100%;
     margin: 0;
   }
 
@@ -1412,6 +1412,7 @@ input::placeholder {
 
   .serd-list {
     margin-top: 20px;
+    margin-left: 15px;
   }
 
   .serd-list-icon {
@@ -1456,5 +1457,19 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     margin-left: 80px;
+  }
+
+  .section-8 {
+    display: none;
+  }
+
+  .section-9 {
+    display: none;
+  }
+
+  .footer-class,
+  .footer2-bg,
+  .last-bg-color {
+    display: none;
   }
 }
