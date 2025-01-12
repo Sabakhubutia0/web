@@ -1508,8 +1508,31 @@ input::placeholder {
   }
 
   .footer-class,
-  .footer2-bg,
   .last-bg-color {
     display: none;
+  }
+
+  .footer2-bg {
+    margin-top: 50px;
+  }
+
+  .footer2-text-icon h1 {
+    margin-right: 12%;
+    margin-top: 70px;
+  }
+
+  .footer2-text-icon p {
+    text-align: center;
+    margin-top: 22px;
+    color: #a5a5a5;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 45vh;
+    margin-top: 70px;
+  }
+
+  .footer2-icon {
+    margin-top: 80px;
   }
 }
