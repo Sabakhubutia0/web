@@ -1353,9 +1353,15 @@ input::placeholder {
     margin: 20px 10px;
   }
 
+  .Roca-span-color,
+  h1,
+  h2 {
+    margin-left: 0;
+  }
+
   .Roca-span-color h1 {
     font-size: 28px;
-    line-height: 1.2;
+    line-height: 0.7;
   }
 
   .text-01 h1 {
@@ -1366,17 +1372,8 @@ input::placeholder {
     font-size: 14px;
   }
 
-  .text-center .flex-wrap {
-    margin: 10px 0;
-  }
-
   .text-center .flex-wrap span {
     font-size: 16px;
-  }
-
-  .social-icons a img {
-    width: 30px;
-    margin: 0 5px;
   }
 
   .last-text h3 {
@@ -1399,7 +1396,8 @@ input::placeholder {
   .section-img img {
     max-width: 430px;
     width: 100%;
-    margin: 0;
+
+    margin-top: 20px;
   }
 
   .wrapper {
@@ -1466,6 +1464,7 @@ input::placeholder {
   .right {
     display: none;
   }
+
   .left {
     margin-left: -150px;
   }
