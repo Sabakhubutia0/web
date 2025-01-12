@@ -1507,8 +1507,7 @@ input::placeholder {
     margin-top: 50px;
   }
 
-  .footer-class,
-  .last-bg-color {
+  .footer-class {
     display: none;
   }
 
@@ -1534,5 +1533,16 @@ input::placeholder {
 
   .footer2-icon {
     margin-top: 80px;
+  }
+
+  .last-bg-color {
+    padding: 60px;
+    margin: 0;
+  }
+
+  .last-bg-color a {
+    display: block;
+    margin-top: -60px;
+    margin-left: 12%;
   }
 }
