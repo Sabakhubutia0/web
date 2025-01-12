@@ -1459,6 +1459,10 @@ input::placeholder {
     margin-left: 80px;
   }
 
+  .section-8-text {
+    margin-top: -80px;
+  }
+
   .right {
     display: none;
   }
@@ -1471,7 +1475,7 @@ input::placeholder {
   }
 
   .middle2 {
-    margin-left: -210px;
+    margin-left: -205px;
   }
 
   .right2-img {
@@ -1490,8 +1494,17 @@ input::placeholder {
     margin-right: -44vh;
   }
 
-  .section-9 {
-    display: none;
+  .section-9-span {
+    margin-top: -80px;
+  }
+
+  .section-9-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
   }
 
   .footer-class,
