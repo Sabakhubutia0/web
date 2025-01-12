@@ -1459,8 +1459,35 @@ input::placeholder {
     margin-left: 80px;
   }
 
-  .section-8 {
+  .right {
     display: none;
+  }
+  .left {
+    margin-left: -150px;
+  }
+
+  .left2 {
+    margin-right: -100px;
+  }
+
+  .middle2 {
+    margin-left: -210px;
+  }
+
+  .right2-img {
+    display: none;
+  }
+
+  .right3-img {
+    display: none;
+  }
+
+  .left3 {
+    margin-left: -130px;
+  }
+
+  .middle3 {
+    margin-right: -44vh;
   }
 
   .section-9 {
