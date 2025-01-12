@@ -1502,7 +1502,7 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 50px;
   }
