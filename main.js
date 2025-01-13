@@ -1,18 +1,18 @@
-// const images = ["img/img-1.jpg", "img/img-2.jpg", "img/img-3.jpg"];
+const images = ["img/img-1.jpg", "img/img-2.webp", "img/img-6.jpg"];
 
-// let currentIndex = 0;
+const imgElement = document.querySelector(".img-back");
+let currentIndex = 0;
 
-// function changeBackground() {
-//   document.body.style.background = `url('${images[currentIndex]}') no-repeat center center fixed`;
-//   document.body.style.backgroundSize = "cover";
+function changeBackground() {
+  currentIndex = (currentIndex + 1) % images.length;
+  imgElement.src = images[currentIndex];
+}
 
-//   currentIndex = (currentIndex + 1) % images.length;
-// }
+setInterval(changeBackground, 5000);
 
-// // ცვლის სურათს ყოველ 2 წამში (2000 მილიწამი)
-// setInterval(changeBackground, 2000);
+console.log("hello");
 
-// console.log("hello");
+// ---------------slaider------------------
 
 function animateProgressBars() {
   const progressBars = document.querySelectorAll(".progress-bar-fill");
